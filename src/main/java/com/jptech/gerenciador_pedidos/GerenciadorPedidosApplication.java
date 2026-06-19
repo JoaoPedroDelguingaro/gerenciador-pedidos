@@ -1,0 +1,20 @@
+package com.jptech.gerenciador_pedidos;
+
+import com.jptech.gerenciador_pedidos.principal.Principal;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class GerenciadorPedidosApplication implements CommandLineRunner {
+
+	public static void main(String[] args) {
+		SpringApplication.run(GerenciadorPedidosApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		Principal pr = new Principal();
+		pr.run();
+	}
+}
